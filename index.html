@@ -7,25 +7,21 @@
 </head>
 <body>
 
-<header class="hero">
-    <h1>Hi, I'm <span>Dibyendu</span></h1>
-    <p>Web Developer | Intern</p>
-    <button onclick="showMore()">Explore More</button>
+<header class="top">
+    <h1>Dibyendu</h1>
+    <p>Web Development Intern at YCSAS</p>
+    <button onclick="scrollToSec('about')">View Profile</button>
 </header>
 
-<nav class="menu">
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#tasks">Intern Tasks</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-<section id="about" class="box hidden">
+<section id="about" class="card">
     <h2>About Me</h2>
-    <p>I am Dibyendu, a passionate web developer learning HTML, CSS, JavaScript and DOM manipulation.</p>
+    <p>
+        I am Dibyendu, a beginner web developer learning HTML, CSS and JavaScript.
+        Through the YCSAS Internship, I gained practical experience by completing real tasks.
+    </p>
 </section>
 
-<section id="skills" class="box hidden">
+<section class="card">
     <h2>Skills</h2>
     <div class="skills">
         <span>HTML</span>
@@ -36,18 +32,22 @@
     </div>
 </section>
 
-<section id="tasks" class="box hidden">
+<section class="card">
     <h2>Internship Tasks</h2>
-    <div class="task">Task 1 : Create GitHub Account</div>
-    <div class="task">Task 2 : Make Webpage & Push to GitHub</div>
-    <div class="task">Task 3 : Registration Form</div>
-    <div class="task">Task 4 : To-Do List</div>
-    <div class="task">Task 5 : Portfolio Website</div>
+    <ul class="tasks">
+        <li>Create GitHub Account</li>
+        <li>Webpage & Push to GitHub</li>
+        <li>Registration Form</li>
+        <li>To-Do List</li>
+        <li>Portfolio Website</li>
+    </ul>
 </section>
 
-<section id="contact" class="box hidden">
+<section class="card">
     <h2>Contact</h2>
-    <p>Email: dibyendu@gmail.com</p>
+    <input type="email" id="email" placeholder="Enter your email">
+    <button onclick="sendMsg()">Send</button>
+    <p id="msg"></p>
 </section>
 
 <script src="script.js"></script>
